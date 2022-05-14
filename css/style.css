@@ -1,0 +1,358 @@
+body {
+  background-color: #24262b;
+}
+
+.content-wrapper {
+  background-color: #24262b;
+}
+.banner-card {
+  width: 270px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.banner-card img {
+  width: 100%;
+}
+
+.card-lg {
+  width: 500px !important;
+}
+
+.bg-dark-theme {
+  background-color: #191b1e;
+}
+
+.br-15 {
+  border-radius: 15px;
+}
+
+.col-inner h6 {
+  font-size: 18px;
+}
+
+.col-inner h6 img {
+  width: 30px;
+}
+
+.data-card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.data-card .data-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.data-card .data-img img {
+  width: 100%;
+}
+
+.data-card .data-body > span {
+  color: #59626a;
+  font-size: 12px;
+}
+
+.data-card .data-body p {
+  line-height: 2px;
+}
+
+.data-card .data-body .data-type {
+  font-size: 12px;
+}
+
+.data-card .card-price span {
+  padding-left: 0.25rem;
+  color: #5ddb1c;
+  font-weight: 700;
+}
+
+.trend-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.trend-card .trend-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.trend-card .trend-img img {
+  width: 100%;
+}
+
+.trend-card .trend-body {
+  margin-top: 10px;
+}
+
+.trend-card .trend-body span {
+  color: #59626a;
+  font-size: 13px;
+}
+
+.trend-card .trend-body p {
+  line-height: 2px;
+}
+
+.trend-card .trend-body .trend-type {
+  font-size: 12px;
+}
+
+.trend-cards-container {
+  display: flex;
+  gap: 15px;
+}
+
+.tabs {
+  width: 70%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+}
+
+.tabs p {
+  padding: 15px 20px;
+  color: #59626a;
+  font-weight: bold;
+  margin: 0 !important;
+}
+
+.tabs .active {
+  background-color: #24262b;
+  border-radius: 50px;
+}
+
+.tabs .active p {
+  color: #fff;
+}
+
+.game-card-lg {
+  overflow: hidden;
+  width: 360px;
+}
+
+.game-card-lg img {
+  object-fit: cover;
+  object-position: left;
+  width: 100%;
+  height: 180px;
+  border-radius: 15px;
+}
+
+.game-card-lg .game-card-body p {
+  color: #888;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.game-card {
+  width: 180px;
+  overflow: hidden;
+}
+
+.game-card img {
+  height: 180px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.game-card .game-card-body p {
+  color: #888;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* search bar */
+.search-box {
+  background-color: #1c1e22;
+  padding: 0 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.search-box i {
+  color: #676e77;
+}
+
+.search-box input {
+  background: transparent;
+  color: #fff;
+  border: 0;
+  outline: none;
+  padding: 8px;
+  flex: 1;
+}
+
+/* search bar */
+
+.signin-link {
+  color: #43b309;
+  font-weight: bold;
+}
+
+.btn-signup {
+  color: #f5f6f7;
+  box-shadow: 0 4px 8px rgb(29 34 37 / 10%);
+  background-color: var(--primary-color);
+  background-image: conic-gradient(from 1turn, #43b309, #5ddb1c);
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.btn-signup:hover {
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+/* messenger */
+.messages-header {
+  background-color: #1e2024;
+  width: 100%;
+  height: 60px;
+}
+
+.messages-header .chat-tab {
+  height: 100%;
+  width: 40%;
+  background-color: #24262b;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.messages-footer {
+  background-color: #2d2f35;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  padding: 10px 5px;
+}
+
+.message-control input {
+  background: #1e2024;
+  color: #fff;
+  border-radius: 50px;
+  border: 1px solid #54ce16;
+  padding: 8px;
+  outline: none;
+}
+
+/* messenger */
+
+.btn-menu-active {
+  background: #31343c;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+.btn-menu {
+  color: #59626a;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+.text-highlighted {
+  color: #5ddb1c;
+  font-weight: bold;
+  font-style: italic;
+  display: inline-block;
+  font-size: 18px;
+}
+
+/* Menu Cards */
+
+.menu-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-cards-container .menu-card-row {
+  display: flex;
+  gap: 8px;
+}
+
+.menu-card {
+  background-color: #17181b;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-card img {
+  width: 100%;
+}
+
+.menu-icons {
+  width: 40px;
+}
+
+.language-box {
+  background-color: #31343c;
+  border-radius: 50px !important;
+}
+
+/* Menu Cards */
+
+/* Table */
+
+table img {
+  width: 20px;
+  height: 20px;
+}
+
+table {
+  background-color: transparent !important;
+}
+
+/* Table */
+
+a:hover {
+  color: #5ddb1c;
+}
+
+/* theme */
+.txt-grey {
+  color: #c2c2c2;
+}
+
+.txt-green {
+  color: #5ddb1c;
+}
+
+/* theme */
+
+/* active item */
+.active-item {
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    rgba(105, 179, 1, 0.4),
+    rgba(85, 89, 102, 0.4) 33%,
+    rgba(85, 89, 102, 0.4)
+  );
+  color: #f5f6f7;
+}
+/* active item */
