@@ -247,6 +247,7 @@ body {
   border-radius: 50px;
   border: 1px solid #54ce16;
   padding: 8px;
+  width: 180px;
   outline: none;
 }
 
@@ -356,3 +357,168 @@ a:hover {
   color: #f5f6f7;
 }
 /* active item */
+
+.modal-content {
+  border-radius: 15px !important;
+}
+
+.modal-content {
+  background-color: #43b309 !important;
+}
+
+.modalHeader {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.modalBody {
+  background-color: #24262b;
+  border-radius: 15px;
+}
+
+.text-control {
+  background-color: #31343c;
+  border-radius: 15px;
+  border: 1px solid #54ce16;
+  padding: 15px;
+  width: 100%;
+  outline: none;
+  color: #fff;
+}
+
+.btn-signin {
+  color: #f5f6f7;
+  box-shadow: 0 4px 8px rgb(29 34 37 / 10%);
+  background-color: #581ac4;
+  background-image: conic-gradient(from 1turn, #581ac4, #773cfd);
+  padding: 15px 90px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  flex: 1;
+  text-align: center;
+}
+.btn-signup-modal {
+  color: #f5f6f7;
+  box-shadow: 0 4px 8px rgb(29 34 37 / 10%);
+  background-color: var(--primary-color);
+  background-image: conic-gradient(from 1turn, #43b309, #5ddb1c);
+  padding: 15px 90px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  flex: 1;
+  text-align: center;
+}
+
+.btn-signup-modal:hover{
+  color: #fff;
+}
+
+.btn-signin:hover {
+  color: #fff;
+}
+
+.btn-signup-grey {
+  color: #f5f6f7;
+  background-color: #59626a;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.btn-signup-grey:hover{
+  color: #fff;
+}
+
+.btnGroup{
+  gap: 10px;
+}
+
+/*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+body {
+  font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.tabset > label {
+  position: relative;
+  color: #59626a;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+/* .tabset > label:hover,
+.tabset > input:focus + label {
+  background-color: #191b1e !important;
+  padding: 15px 20px;
+  color: #59626a;
+  font-weight: bold;
+  margin: 0 !important;
+} */
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #06c;
+}
+
+.tabset > input:checked + label {
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: middle;
+  color: #fff;
+  font-weight: bold;
+  background-color: #191b1e;
+  border-radius: 50px;
+  margin-bottom: -1px;
+  vertical-align: middle;
+}
+
+.tab-panel {
+  padding: 30px 0;
+}
+
+/*
+ Demo purposes only
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
