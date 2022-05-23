@@ -415,7 +415,7 @@ a:hover {
   text-align: center;
 }
 
-.btn-signup-modal:hover{
+.btn-signup-modal:hover {
   color: #fff;
 }
 
@@ -434,11 +434,11 @@ a:hover {
   text-decoration: none;
 }
 
-.btn-signup-grey:hover{
+.btn-signup-grey:hover {
   color: #fff;
 }
 
-.btnGroup{
+.btnGroup {
   gap: 10px;
 }
 
@@ -482,7 +482,6 @@ body {
   font-weight: 600;
 }
 
-
 /* .tabset > label:hover,
 .tabset > input:focus + label {
   background-color: #191b1e !important;
@@ -521,4 +520,16 @@ body {
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+.tabset #firstTab::before {
+  content: "";
+  width: 650px;
+  height: 80px;
+  background-color: #191A1E !important;
+  z-index: 0;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  border-radius: 60px;
 }

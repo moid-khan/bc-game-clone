@@ -185,8 +185,18 @@
                   />
                 </div>
                 <div class="d-flex justify-content-between btnGroup">
-                  <a href="#" class="btn-signin">Sign in</a>
-                  <a href="#" class="btn-signup-grey"
+                  <a
+                    href="#"
+                    class="btn-signin"
+                    data-bs-toggle="modal"
+                    data-bs-target="#signinModal"
+                    >Sign in</a
+                  >
+                  <a
+                    href="#"
+                    class="btn-signup-grey"
+                    data-bs-toggle="modal"
+                    data-bs-target="#signupModal"
                     >sign up <i class="bi bi-caret-right-fill"></i
                   ></a>
                 </div>
@@ -259,7 +269,13 @@
                   />
                 </div>
                 <div class="d-flex justify-content-between btnGroup">
-                  <a href="#" class="btn-signup-grey">Sign in</a>
+                  <a
+                    href="#"
+                    class="btn-signup-grey"
+                    data-bs-toggle="modal"
+                    data-bs-target="#signinModal"
+                    >Sign in</a
+                  >
                   <a href="#" class="btn-signup-modal">sign up</a>
                 </div>
               </form>
@@ -713,7 +729,7 @@
             </div>
           </div>
         </div>
-<!-- 
+        <!-- 
         <div class="container d-flex justify-content-end">
           <div class="tabs m-3 bg-dark-theme">
             <div class="active">
@@ -738,6 +754,7 @@
         </div> -->
 
         <div class="container mt-4">
+          <label id="firstTab"></label>
           <div class="tabset ml-2">
             <!-- Tab 1 -->
             <input
@@ -747,7 +764,7 @@
               aria-controls="lobby"
               checked
             />
-            <label for="tab1">Lobby</label>
+            <label for="tab1" id="">Lobby</label>
             <!-- Tab 2 -->
             <input
               type="radio"
@@ -786,7 +803,6 @@
               aria-controls="gameShow"
             />
             <label for="tab6">Game Show</label>
-
 
             <div class="tab-panels">
               <section id="lobby" class="tab-panel">
