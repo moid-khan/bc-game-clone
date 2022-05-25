@@ -503,33 +503,23 @@ body {
   vertical-align: middle;
   color: #fff;
   font-weight: bold;
-  background-color: #191b1e;
+  background-color: #23252B;
   border-radius: 50px;
   margin-bottom: -1px;
   vertical-align: middle;
 }
-
 .tab-panel {
   padding: 30px 0;
 }
 
-/*
- Demo purposes only
-*/
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-.tabset #firstTab::before {
-  content: "";
-  width: 650px;
-  height: 80px;
+.tabs-container::before{
+  content: '';
+  display: block;
+  height: 75px;
+  width: 60%;
+  border-radius: 50px;
   background-color: #191A1E !important;
-  z-index: 0;
-  position: absolute;
-  top: -10px;
-  left: 0;
-  border-radius: 60px;
+  position: relative;
+  top: 70px;
+  left: 4px;
 }

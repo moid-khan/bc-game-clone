@@ -525,7 +525,7 @@
       </aside>
 
       <div class="content-wrapper">
-        <div class="owl-carousel owl-theme p-3">
+        <div class="owl-carousel newCarosel owl-theme p-3">
           <div class="item">
             <div class="banner-card">
               <a href="#">
@@ -659,32 +659,41 @@
                   <span style="color: rgb(93, 219, 28)">Trending</span>
                   Right Now
                 </h6>
-                <div class="trend-cards-container">
-                  <div class="trend-card">
-                    <div class="trend-img">
-                      <img src="images/data-card-1.png" alt="" />
+                <!-- <div class="trend-cards-container"> -->
+                <div class="">
+                  <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div class="item">
+                      <div class="trend-card">
+                        <div class="trend-img">
+                          <img src="images/data-card-1.png" alt="" />
+                        </div>
+                        <div class="trend-body text-white">
+                          <p class="trend-type m-0">Tower</p>
+                          <span>Hidden</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="trend-body text-white">
-                      <p class="trend-type m-0">Tower Legend</p>
-                      <span>Hidden</span>
+                    <div class="item">
+                      <div class="trend-card">
+                        <div class="trend-img">
+                          <img src="images/data-card-3.png" alt="" />
+                        </div>
+                        <div class="trend-body text-white">
+                          <p class="trend-type m-0">Tower</p>
+                          <span>Hidden</span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="trend-card">
-                    <div class="trend-img">
-                      <img src="images/data-card-3.png" alt="" />
-                    </div>
-                    <div class="trend-body text-white">
-                      <p class="trend-type m-0">Tower Legend</p>
-                      <span>Hidden</span>
-                    </div>
-                  </div>
-                  <div class="trend-card">
-                    <div class="trend-img">
-                      <img src="images/data-card-2.png" alt="" />
-                    </div>
-                    <div class="trend-body text-white">
-                      <p class="trend-type m-0">Tower Legend</p>
-                      <span>Hidden</span>
+                    <div class="item">
+                      <div class="trend-card">
+                        <div class="trend-img">
+                          <img src="images/data-card-2.png" alt="" />
+                        </div>
+                        <div class="trend-body text-white">
+                          <p class="trend-type m-0">Tower</p>
+                          <span>Hidden</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -753,8 +762,7 @@
           </div>
         </div> -->
 
-        <div class="container mt-4">
-          <label id="firstTab"></label>
+        <div class="container mt-4 tabs-container">
           <div class="tabset ml-2">
             <!-- Tab 1 -->
             <input
@@ -764,7 +772,7 @@
               aria-controls="lobby"
               checked
             />
-            <label for="tab1" id="">Lobby</label>
+            <label for="tab1" id="" class="labby">Lobby</label>
             <!-- Tab 2 -->
             <input
               type="radio"
@@ -1817,11 +1825,29 @@
     <!-- Main Js -->
     <script src="js/main.js"></script>
     <script>
-      $(".owl-carousel").owlCarousel({
+      $(".owl-carousel1").owlCarousel({
         loop: true,
         autoplay: true,
+        margin: 20,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+
+        $(".newCarosel").owlCarousel({
+        loop: true,
         margin: 50,
         nav: false,
+        autoplay: true,
         responsive: {
           0: {
             items: 1,
