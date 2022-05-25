@@ -241,14 +241,40 @@ body {
   padding: 10px 5px;
 }
 
-.message-control input {
+.message-control{
+  display: flex;
+  gap: 5px;
+}
+
+.message-control .message-input {
   background: #1e2024;
   color: #fff;
+  display: flex;
+  align-items: center;
   border-radius: 50px;
   border: 1px solid #54ce16;
   padding: 8px;
-  width: 180px;
+  width: 220px;
   outline: none;
+}
+
+.w-180{
+  width: 180px !important;
+}
+
+.message-input i{
+  color: #474749;
+}
+
+.btn-message{
+  display: none;
+}
+
+.message-control input{
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 85%;
 }
 
 /* messenger */

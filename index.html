@@ -1795,8 +1795,11 @@
         </header>
         <footer class="messages-footer">
           <div class="message-control">
-            <input type="text" placeholder="Your Message" />
-            <button class="btn-signup border-0">
+            <div class="message-input">
+            <input type="text" class="message-textbox" placeholder="Your Message" />
+            <i class="fa-solid fa-face-meh-blank"></i>
+          </div>
+            <button class="btn-signup border-0 btn-message">
               <i class="fa-solid fa-paper-plane"></i>
             </button>
           </div>
@@ -1860,6 +1863,17 @@
           },
         },
       });
+
+      $(document).ready(function(){
+        $(".message-textbox").focusin(function(){ 
+          $(".btn-message").show();
+          $(".message-input").addClass("w-180");
+        })
+        $(".message-textbox").focusout(function(){ 
+          $(".btn-message").hide();
+          $(".message-input").removeClass("w-180");
+        })
+      })
     </script>
   </body>
 </html>
