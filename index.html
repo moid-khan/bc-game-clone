@@ -47,6 +47,16 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Emoji -->
+    <link rel="stylesheet" href="css/emojibuttonlistjs.min.css" />
+    <script src="js/emojibuttonlistjs.min.js"></script>
   </head>
   <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
@@ -74,7 +84,7 @@
           <li class="nav-item w-50 me-4">
             <img src="images/logo.webp" class="w-75 mt-1" alt="" />
           </li>
-          <li class="nav-item w-100">
+          <li class="nav-item w-100 search-box-parent">
             <div class="search-box">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input
@@ -86,7 +96,7 @@
         </ul>
 
         <!-- Right navbar links -->
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto nav-items-left">
           <li class="nav-link">
             <a
               href="#"
@@ -1521,7 +1531,7 @@
           <div class="p-3 br-15 m-3 bg-dark-theme">
             <div class="row my-2">
               <table
-                class="table table-hover table-dark table-borderless rounded-sm"
+                class="table table-hover table-dark table-borderless table-responsive rounded-sm"
               >
                 <thead>
                   <tr>
@@ -1795,10 +1805,15 @@
         </header>
         <footer class="messages-footer">
           <div class="message-control">
-            <div class="message-input">
-            <input type="text" class="message-textbox" placeholder="Your Message" />
-            <i class="fa-solid fa-face-meh-blank"></i>
-          </div>
+            <div class="message-input" id="display">
+              <input
+                type="text"
+                id="text1"
+                class="message-textbox"
+                placeholder="Your Message"
+              />
+              <i class="fa-solid fa-face-meh-blank" id="button1"></i>
+            </div>
             <button class="btn-signup border-0 btn-message">
               <i class="fa-solid fa-paper-plane"></i>
             </button>
@@ -1825,6 +1840,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
     <!-- Main Js -->
     <script src="js/main.js"></script>
     <script>
@@ -1838,7 +1854,7 @@
             items: 1,
           },
           600: {
-            items: 3,
+            items: 4,
           },
           1000: {
             items: 3,
@@ -1846,7 +1862,7 @@
         },
       });
 
-        $(".newCarosel").owlCarousel({
+      $(".newCarosel").owlCarousel({
         loop: true,
         margin: 50,
         nav: false,
@@ -1856,7 +1872,10 @@
             items: 1,
           },
           600: {
-            items: 3,
+            items: 2,
+          },
+          800:{
+            items: 3
           },
           1000: {
             items: 4,
@@ -1864,16 +1883,35 @@
         },
       });
 
-      $(document).ready(function(){
-        $(".message-textbox").focusin(function(){ 
+      $(document).ready(function () {
+        $(".message-textbox").focusin(function () {
           $(".btn-message").show();
           $(".message-input").addClass("w-180");
-        })
-        $(".message-textbox").focusout(function(){ 
+        });
+        $(".message-textbox").focusout(function () {
           $(".btn-message").hide();
           $(".message-input").removeClass("w-180");
+        });
+
+        $('.fa-comment').click(function(){
+          // if($('.control-sidebar').css('display') == "block"){
+          //   alert($('.control-sidebar').css('display'));  
+            $('.content-wrapper').toggleClass("ml-main")
+          // }
         })
-      })
+
+      });
+
+      var margin = 10,
+        instance1 = new emojiButtonList("button1", {
+          dropDownXAlign: "left",
+          textBoxID: "text1",
+          yAlignMargin: margin,
+          xAlignMargin: margin,
+        });
+      function emojiClickEvent(emojiText) {
+        document.title += " " + emojiText;
+      }
     </script>
   </body>
 </html>
